@@ -13,6 +13,8 @@ import DoctorDashboard from './pages/Doctor/DoctorDashboard';
 import PatientDashboard from './pages/Patient/PatientDashboard';
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
     <Router>
       <Routes>
@@ -31,4 +33,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
