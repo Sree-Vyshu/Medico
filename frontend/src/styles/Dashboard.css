@@ -1,0 +1,63 @@
+/* Dashboard Custom Styles for Bootstrap Enhancement */
+
+/* Card Hover Effects */
+.card {
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.15);
+  transform: translateY(-4px);
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.15) !important;
+  transform: translateY(-4px);
+}
+
+/* Card Header */
+.card-header {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.card-header h5 {
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Background Color */
+body {
+  background-color: #f8fafc;
+}
+
+/* Stats Cards Enhancement */
+.border-start-5 {
+  border-left-width: 5px !important;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.text-secondary {
+  color: #64748b !important;
+}
+
+/* Badge Styles */
+.badge {
+  font-size: 13px;
+  padding: 6px 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 16px;
+  }
+}
+

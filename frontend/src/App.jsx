@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import AdminDashboard from './pages/Admin/AdminDashboard';
+import AdminAppointments from './pages/Admin/AdminAppointments';
+import AdminDoctors from './pages/Admin/AdminDoctors';
+import AdminPatients from './pages/Admin/AdminPatients';
 import DoctorDashboard from './pages/Doctor/DoctorDashboard';
 import PatientDashboard from './pages/Patient/PatientDashboard';
 
@@ -14,6 +17,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/admin/appointments" element={<AdminAppointments />} />
+        <Route path="/admin/doctors" element={<AdminDoctors />} />
+        <Route path="/admin/patients" element={<AdminPatients />} />
         <Route path="/doctor" element={<DoctorDashboard />} />
         <Route path="/patient" element={<PatientDashboard />} />
       </Routes>

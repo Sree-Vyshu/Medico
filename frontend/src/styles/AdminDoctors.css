@@ -1,0 +1,266 @@
+/* Doctor Management Styles */
+
+/* Avatar Styles */
+.avatar-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.avatar-circle-lg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+/* Doctor Card */
+.doctor-card {
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer !important;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.doctor-card:hover {
+  border-color: #2563eb;
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.15) !important;
+  transform: translateY(-6px);
+}
+
+.doctor-card:hover .avatar-circle {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Quick Stats */
+.quick-stats {
+  gap: 16px;
+}
+
+.quick-stats > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Offcanvas Styling */
+.doctor-offcanvas .offcanvas-header {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.doctor-offcanvas .offcanvas-body {
+  padding: 24px;
+}
+
+/* Progress Bars */
+.progress-bar-animated {
+  animation: progress-bar-stripes 1s linear infinite;
+}
+
+/* Form Controls */
+.form-control,
+.form-select {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Button Group */
+.btn-group .btn {
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-group .btn.active {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+/* Card Styling */
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+.card.bg-light {
+  background-color: #f8fafc !important;
+  border: none;
+}
+
+/* Badge Styles */
+.badge {
+  font-weight: 600;
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+/* Sticky Search Bar */
+.sticky-top {
+  top: 90px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item:hover {
+  background-color: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+}
+
+/* Input Group */
+.input-group {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.input-group .form-control {
+  border-radius: 0;
+}
+
+.input-group .form-control:focus {
+  border-color: #2563eb;
+}
+
+.input-group-text {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+/* Header Styling */
+h2,
+h4,
+h5,
+h6 {
+  color: #1e293b;
+}
+
+small.text-muted {
+  color: #64748b;
+}
+
+/* Empty State */
+.text-center {
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sticky-top {
+    top: 70px;
+  }
+
+  .avatar-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .btn-group .btn {
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+
+  .quick-stats {
+    gap: 8px;
+  }
+
+  .doctor-card {
+    border-radius: 8px;
+  }
+
+  .offcanvas {
+    width: 100% !important;
+  }
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.doctor-card,
+.card {
+  animation: slideIn 0.3s ease;
+}
+
+/* Badge Colors */
+.bg-primary {
+  background-color: #2563eb !important;
+}
+
+.bg-success {
+  background-color: #10b981 !important;
+}
+
+.bg-warning {
+  background-color: #f59e0b !important;
+}
+
+.bg-info {
+  background-color: #0891b2 !important;
+}
+
+.bg-danger {
+  background-color: #ef4444 !important;
+}
+
+/* Text Colors */
+.text-success {
+  color: #10b981 !important;
+}
+
+.text-warning {
+  color: #f59e0b !important;
+}
+
+.text-info {
+  color: #0891b2 !important;
+}
+
+.text-danger {
+  color: #ef4444 !important;
+}
+
+.text-secondary {
+  color: #64748b !important;
+}

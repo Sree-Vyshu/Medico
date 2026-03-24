@@ -1,0 +1,502 @@
+/* Admin Patients Styling */
+
+/* Search & Filter Bar - Sticky */
+.sticky-top {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid #e9ecef !important;
+  transition: all 0.3s ease;
+}
+
+.sticky-top:hover {
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1) !important;
+}
+
+/* Input Group Styling */
+.input-group .form-control,
+.input-group .form-select {
+  border: 1px solid #dee2e6;
+  transition: all 0.2s ease;
+}
+
+.input-group .form-control:focus,
+.input-group .form-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+}
+
+.input-group .input-group-text {
+  border: 1px solid #dee2e6;
+  color: #6c757d;
+}
+
+/* Avatar Styling */
+.avatar-circle-small {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+}
+
+.avatar-circle-lg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
+}
+
+/* Blood Group Badge */
+.badge {
+  font-weight: 600;
+  padding: 6px 12px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.badge.bg-danger {
+  background-color: #ef4444 !important;
+}
+
+.badge.bg-primary {
+  background-color: #2563eb !important;
+}
+
+.badge.bg-warning {
+  background-color: #f59e0b !important;
+  color: #000000;
+}
+
+.badge.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+.badge.bg-success {
+  background-color: #10b981 !important;
+}
+
+.badge.bg-info {
+  background-color: #06b6d4 !important;
+}
+
+.badge.bg-dark {
+  background-color: #1f2937 !important;
+}
+
+.badge.bg-purple-custom {
+  background-color: #a855f7 !important;
+}
+
+/* Table Styling */
+.table {
+  font-size: 14px;
+  color: #374151;
+}
+
+.table thead th {
+  background-color: #f3f4f6;
+  font-weight: 700;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.table tbody td {
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  vertical-align: middle;
+}
+
+.table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f0f9ff;
+  box-shadow: inset 3px 0 0 #2563eb;
+}
+
+.table tbody tr:hover td {
+  color: #1e40af;
+}
+
+/* Code Tag in Table */
+code {
+  background-color: #f3f4f6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: 'Monaco', 'Courier', monospace;
+  color: #6b7280;
+}
+
+/* Button Styling */
+.btn-outline-primary {
+  color: #2563eb;
+  border-color: #2563eb;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.btn-outline-secondary {
+  color: #6c757d;
+  border-color: #dee2e6;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f3f4f6;
+  border-color: #adb5bd;
+  color: #495057;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  border: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
+}
+
+/* Offcanvas - Patient History */
+.patient-offcanvas .offcanvas {
+  background: #ffffff;
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.1);
+}
+
+.patient-offcanvas .offcanvas-header {
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  color: #ffffff;
+  border-bottom: none;
+}
+
+.patient-offcanvas .offcanvas-header .offcanvas-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.patient-offcanvas .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+.patient-offcanvas .offcanvas-body {
+  padding: 24px;
+  background-color: #fafafa;
+}
+
+/* Timeline Styling */
+.timeline-item {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  padding-bottom: 20px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-marker {
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 4px;
+  position: relative;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.timeline-item:not(:last-child) .timeline-marker::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 60px;
+  background: linear-gradient(180deg, #2563eb 0%, transparent 100%);
+}
+
+.timeline-content {
+  flex: 1;
+  padding: 12px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border-left: 3px solid #2563eb;
+  transition: all 0.2s ease;
+}
+
+.timeline-content:hover {
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+  transform: translateX(4px);
+}
+
+/* Alert - Allergy Warning */
+.alert-warning {
+  background-color: #fef08a !important;
+  border: 2px solid #facc15 !important;
+  color: #78350f !important;
+  border-radius: 8px;
+  padding: 14px;
+  font-weight: 600;
+}
+
+.alert-warning strong {
+  color: #dc2626;
+}
+
+/* List Group */
+.list-group-item {
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f0f9ff;
+  border-color: #2563eb;
+}
+
+.list-group-flush .list-group-item {
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px 0;
+}
+
+.list-group-flush .list-group-item:first-child {
+  border-top: none;
+}
+
+/* Card Styling */
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card.bg-light {
+  background-color: #f9fafb !important;
+  border-color: #e5e7eb;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+/* Form Switch */
+.form-switch .form-check-input {
+  width: 48px;
+  height: 24px;
+  border-radius: 12px;
+  border: 2px solid #dee2e6;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.form-switch .form-check-input:checked {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form-switch .form-check-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form-check-label {
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Collapse Animation */
+.collapse-horizontal.show {
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}
+
+/* Empty State */
+.text-center {
+  padding: 40px 20px;
+}
+
+.text-center h5 {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+/* Cursor Styling */
+.cursor-pointer {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cursor-pointer:hover {
+  color: #1e40af !important;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .table {
+    font-size: 13px;
+  }
+
+  .table thead th,
+  .table tbody td {
+    padding: 8px;
+  }
+
+  .avatar-circle-small {
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .btn-sm {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .patient-offcanvas .offcanvas {
+    width: 100% !important;
+  }
+
+  .timeline-marker {
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline-item {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .table {
+    font-size: 12px;
+  }
+
+  .table thead th {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .table tbody td {
+    padding: 6px;
+  }
+
+  .avatar-circle-small {
+    width: 32px;
+    height: 32px;
+    font-size: 11px;
+  }
+
+  .avatar-circle-lg {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  code {
+    font-size: 11px;
+  }
+}
+
+/* Clinical Color Palette Harmony */
+:root {
+  --clinical-white: #ffffff;
+  --clinical-light-gray: #f9fafb;
+  --clinical-gray: #6b7280;
+  --clinical-dark-gray: #374151;
+  --clinical-blue: #2563eb;
+  --clinical-light-blue: #60a5fa;
+  --clinical-danger: #ef4444;
+  --clinical-success: #10b981;
+  --clinical-warning: #f59e0b;
+}
+
+/* Global Clinical Styling */
+body {
+  background-color: var(--clinical-light-gray);
+  color: var(--clinical-dark-gray);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+}
+
+/* Shadow Utilities */
+.shadow-sm {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Text Utilities */
+.text-muted {
+  color: var(--clinical-gray) !important;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+/* Utility: Smooth Transition */
+* {
+  transition-timing-function: ease;
+  transition-duration: 0.2s;
+}
